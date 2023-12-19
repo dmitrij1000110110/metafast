@@ -26,7 +26,7 @@ import java.util.List;
  * Created by -- on 05.02.2021.
  */
 public class ComponentExtractorMain2 extends Tool {
-    public static final String NAME = "component-extractor";
+    public static final String NAME = "component-extractor2";
     public static final String DESCRIPTION = "Extract graph components from tangled graph based on pivot k-mers";
 
     public final Parameter<Integer> k = addParameter(new IntParameterBuilder("k")
