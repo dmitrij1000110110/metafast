@@ -353,7 +353,6 @@ public class ComponentsBuilderAroundPivot2 {
 
 
     private boolean goodPath(int pivotCnt, int pivot2Cnt) {
-        logger.debug(pivotCnt + " " + pivot2Cnt);
         return pivotCnt > pivot2Cnt && pivotCnt >= MIN_PIVOTS;
     }
 
