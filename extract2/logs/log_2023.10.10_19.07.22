@@ -1,0 +1,23 @@
+Log created at 10-окт.-2023 (вт) 19:07:22
+10-окт.-23  19:07:22,924  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  19:07:22,925  DEBUG   MAIN: Program parameters = [-k, 31, -i, workDir/kmers/A_train_*.kmers.bin, workDir/kmers/B_train_*.kmers.bin, --pivot, unique/kmers/filtered_6.kmers.bin, --pivot2, unique2/kmers/filtered_6.kmers.bin, -w, extract2]
+10-окт.-23  19:07:22,937  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  19:07:22,937  DEBUG   MAIN: Available processors = 8
+10-окт.-23  19:07:25,030  INFO   MAIN: Running tool component-extractor
+10-окт.-23  19:07:25,066  DEBUG  |   Loading graph from files...
+10-окт.-23  19:07:25,171  INFO   |   Loading file A_train_*.kmers.bin...
+10-окт.-23  19:07:25,172  ERROR  ERROR: Can't load k-mers file
+--
+10-окт.-23  19:07:25,172  TRACE  
+java.io.FileNotFoundException: workDir/kmers/A_train_*.kmers.bin (Нет такого файла или каталога)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at io.IOUtils.run(IOUtils.java:606)
+	at io.IOUtils.loadKmers(IOUtils.java:380)
+	at tools.ComponentExtractorMain2.runImpl(ComponentExtractorMain2.java:72)
+	at ru.ifmo.genetics.utils.tool.Tool.simpleRun(Tool.java:285)
+	at ru.ifmo.genetics.utils.tool.Tool.runAsStep(Tool.java:369)
+	at ru.ifmo.genetics.utils.tool.Tool.run(Tool.java:449)
+	at ru.ifmo.genetics.utils.tool.Tool.mainImpl(Tool.java:619)
+	at tools.ComponentExtractorMain2.main(ComponentExtractorMain2.java:111)

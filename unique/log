@@ -1,0 +1,21 @@
+Log created at 10-окт.-2023 (вт) 18:49:14
+10-окт.-23  18:49:14,947  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  18:49:14,948  DEBUG   MAIN: Program parameters = [-k, 11, -i, workDir/kmers/meta_test_1.kmers.bin, --filter-kmers, workDir/kmers/meta_test_2.kmers.bin, -w, unique]
+10-окт.-23  18:49:14,960  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  18:49:14,960  DEBUG   MAIN: Available processors = 8
+10-окт.-23  18:49:16,558  INFO   MAIN: Running tool unique-kmers
+10-окт.-23  18:49:16,674  INFO   |   Loading file meta_test_1.kmers.bin...
+10-окт.-23  18:49:16,689  DEBUG  |   164 Kb of data processed
+10-окт.-23  18:49:16,694  DEBUG  |   Added/All kmers count = 16'804/16'804 (100,0%)
+10-окт.-23  18:49:16,694  DEBUG  |   Added/All kmers frequency sum = 153'325/153'325 (100,0%)
+10-окт.-23  18:49:16,694  DEBUG  |   k-mers HM size = 16'804
+10-окт.-23  18:49:16,704  DEBUG  |   Memory used = 17,1 Mb, time = 125 ms
+10-окт.-23  18:49:16,765  INFO   |   Loading file meta_test_2.kmers.bin...
+10-окт.-23  18:49:16,773  DEBUG  |   76,0 Kb of data processed
+10-окт.-23  18:49:16,774  DEBUG  |   Added/All kmers count = 7'785/7'785 (100,0%)
+10-окт.-23  18:49:16,774  DEBUG  |   Added/All kmers frequency sum = 42'909/42'909 (100,0%)
+10-окт.-23  18:49:16,774  DEBUG  |   k-mers HM size = 7'785
+10-окт.-23  18:49:16,778  DEBUG  |   Memory used = 22,1 Mb, time = 199 ms
+10-окт.-23  18:49:16,784  DEBUG  |   Starting to print k-mers to unique/kmers/filtered.kmers.bin
+10-окт.-23  18:49:16,793  INFO   |   16'804 k-mers found, 9'033 (53,8%) of them is good (present in one dataset and missing in other)
+10-окт.-23  18:49:16,794  INFO   |   Good k-mers printed to unique/kmers/filtered.kmers.bin

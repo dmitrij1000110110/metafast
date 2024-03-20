@@ -1,0 +1,12 @@
+Log created at 19-мар.-2024 (вт) 20:02:35
+19-мар.-24  20:02:35,558  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+19-мар.-24  20:02:35,559  DEBUG   MAIN: Program parameters = [-k, 31, -i, workDir/kmers/B_train_1.kmers.bin, workDir/kmers/B_train_2.kmers.bin, workDir/kmers/B_train_3.kmers.bin, workDir/kmers/B_train_4.kmers.bin, workDir/kmers/B_train_5.kmers.bin, workDir/kmers/B_train_6.kmers.bin, workDir/kmers/B_train_7.kmers.bin, workDir/kmers/B_train_8.kmers.bin, workDir/kmers/B_train_9.kmers.bin, workDir/kmers/B_train_10.kmers.bin, --pivot2, unique/kmers/filtered_6.kmers.bin, --pivot, unique2/kmers/filtered_6.kmers.bin, -w, extract2]
+19-мар.-24  20:02:35,577  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+19-мар.-24  20:02:35,577  DEBUG   MAIN: Available processors = 8
+19-мар.-24  20:02:39,995  ERROR  ERROR: Uncaught exception: ru.ifmo.genetics.utils.tool.NotSetArgumentException: Mandatory argument --min-pivots not set
+--
+ru.ifmo.genetics.utils.tool.NotSetArgumentException: Mandatory argument --min-pivots not set
+	at ru.ifmo.genetics.utils.tool.Tool.checkArguments(Tool.java:732)
+	at ru.ifmo.genetics.utils.tool.Tool.run(Tool.java:436)
+	at ru.ifmo.genetics.utils.tool.Tool.mainImpl(Tool.java:619)
+	at tools.ComponentExtractorMain2.main(ComponentExtractorMain2.java:124)

@@ -1,0 +1,25 @@
+Log created at 10-окт.-2023 (вт) 18:28:57
+10-окт.-23  18:28:57,751  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  18:28:57,751  DEBUG   MAIN: Program parameters = [-k, 5, -i, workDir/kmers/meta_test_1.kmers.bin, --pivotb, workDir/kmers/pivot_2.kmers.bin, --pivot, workDir/kmers/pivot_1.kmers.bin, -w, extract2]
+10-окт.-23  18:28:57,768  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  18:28:57,768  DEBUG   MAIN: Available processors = 8
+10-окт.-23  18:28:59,096  INFO   MAIN: Running tool component-extractor
+10-окт.-23  18:28:59,123  DEBUG  |   Loading graph from files...
+10-окт.-23  18:28:59,227  INFO   |   Loading file meta_test_1.kmers.bin...
+10-окт.-23  18:28:59,243  DEBUG  |   5,00 Kb of data processed
+10-окт.-23  18:28:59,243  INFO   |   Loading file --pivotb...
+10-окт.-23  18:28:59,243  ERROR  ERROR: Can't load k-mers file
+--
+10-окт.-23  18:28:59,244  TRACE  
+java.io.FileNotFoundException: --pivotb (Нет такого файла или каталога)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at io.IOUtils.run(IOUtils.java:606)
+	at io.IOUtils.loadKmers(IOUtils.java:380)
+	at tools.ComponentExtractorMain.runImpl(ComponentExtractorMain.java:67)
+	at ru.ifmo.genetics.utils.tool.Tool.simpleRun(Tool.java:285)
+	at ru.ifmo.genetics.utils.tool.Tool.runAsStep(Tool.java:369)
+	at ru.ifmo.genetics.utils.tool.Tool.run(Tool.java:449)
+	at ru.ifmo.genetics.utils.tool.Tool.mainImpl(Tool.java:619)
+	at tools.ComponentExtractorMain2.main(ComponentExtractorMain2.java:111)

@@ -1,0 +1,12 @@
+Log created at 10-окт.-2023 (вт) 18:38:11
+10-окт.-23  18:38:11,878  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  18:38:11,879  DEBUG   MAIN: Program parameters = [-k, 5, -i, workDir/kmers/meta_test_1.kmers.bin, --pivot, workDir/kmers/pivot_1.kmers.bin, workDir/kmers/pivot_2.kmers.bin, -w, extract2]
+10-окт.-23  18:38:11,891  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  18:38:11,891  DEBUG   MAIN: Available processors = 8
+10-окт.-23  18:38:14,844  ERROR  ERROR: Uncaught exception: ru.ifmo.genetics.utils.tool.NotSetArgumentException: Mandatory argument --pivot2 not set
+--
+ru.ifmo.genetics.utils.tool.NotSetArgumentException: Mandatory argument --pivot2 not set
+	at ru.ifmo.genetics.utils.tool.Tool.checkArguments(Tool.java:732)
+	at ru.ifmo.genetics.utils.tool.Tool.run(Tool.java:436)
+	at ru.ifmo.genetics.utils.tool.Tool.mainImpl(Tool.java:619)
+	at tools.ComponentExtractorMain2.main(ComponentExtractorMain2.java:112)

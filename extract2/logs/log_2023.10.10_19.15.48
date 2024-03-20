@@ -1,0 +1,53 @@
+Log created at 10-окт.-2023 (вт) 19:15:48
+10-окт.-23  19:15:48,278  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  19:15:48,279  DEBUG   MAIN: Program parameters = [-k, 31, -i, workDir/kmers/A_train_1.kmers.bin, workDir/kmers/A_train_2.kmers.bin, workDir/kmers/A_train_3.kmers.bin, workDir/kmers/A_train_4.kmers.bin, workDir/kmers/A_train_5.kmers.bin, workDir/kmers/A_train_6.kmers.bin, workDir/kmers/A_train_7.kmers.bin, workDir/kmers/A_train_8.kmers.bin, workDir/kmers/A_train_9.kmers.bin, workDir/kmers/A_train_10.kmers.bin, --pivot, unique/kmers/filtered_6.kmers.bin, --pivot2, unique2/kmers/filtered_6.kmers.bin, -w, extract2]
+10-окт.-23  19:15:48,295  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  19:15:48,296  DEBUG   MAIN: Available processors = 8
+10-окт.-23  19:15:50,743  INFO   MAIN: Running tool component-extractor
+10-окт.-23  19:15:50,771  DEBUG  |   Loading graph from files...
+10-окт.-23  19:15:50,912  INFO   |   Loading file A_train_1.kmers.bin...
+10-окт.-23  19:15:52,160  DEBUG  |   332 Mb of data processed
+10-окт.-23  19:15:52,160  INFO   |   Loading file A_train_2.kmers.bin...
+10-окт.-23  19:15:53,610  DEBUG  |   387 Mb of data processed
+10-окт.-23  19:15:53,610  INFO   |   Loading file A_train_3.kmers.bin...
+10-окт.-23  19:15:54,564  DEBUG  |   368 Mb of data processed
+10-окт.-23  19:15:54,564  INFO   |   Loading file A_train_4.kmers.bin...
+10-окт.-23  19:15:55,461  DEBUG  |   368 Mb of data processed
+10-окт.-23  19:15:55,461  INFO   |   Loading file A_train_5.kmers.bin...
+10-окт.-23  19:15:56,148  DEBUG  |   261 Mb of data processed
+10-окт.-23  19:15:56,148  INFO   |   Loading file A_train_6.kmers.bin...
+10-окт.-23  19:15:56,896  DEBUG  |   309 Mb of data processed
+10-окт.-23  19:15:56,897  INFO   |   Loading file A_train_7.kmers.bin...
+10-окт.-23  19:15:57,617  DEBUG  |   291 Mb of data processed
+10-окт.-23  19:15:57,618  INFO   |   Loading file A_train_8.kmers.bin...
+10-окт.-23  19:15:58,589  DEBUG  |   410 Mb of data processed
+10-окт.-23  19:15:58,595  INFO   |   Loading file A_train_9.kmers.bin...
+10-окт.-23  19:15:59,746  DEBUG  |   406 Mb of data processed
+10-окт.-23  19:15:59,752  INFO   |   Loading file A_train_10.kmers.bin...
+10-окт.-23  19:16:01,208  DEBUG  |   397 Mb of data processed
+10-окт.-23  19:16:01,215  DEBUG  |   Added/All kmers count = 369'967'219/369'967'219 (100,0%)
+10-окт.-23  19:16:01,216  DEBUG  |   Added/All kmers frequency sum = 4'485'058'101/4'485'058'101 (100,0%)
+10-окт.-23  19:16:01,216  DEBUG  |   k-mers HM size = 83'817'655
+10-окт.-23  19:16:01,229  DEBUG  |   Memory used = 1,76 Gb, time = 10 s 457 ms
+10-окт.-23  19:16:01,229  DEBUG  |   Loading graph from files...
+10-окт.-23  19:16:01,327  INFO   |   Loading file filtered_6.kmers.bin...
+10-окт.-23  19:16:01,621  DEBUG  |   17,9 Mb of data processed
+10-окт.-23  19:16:01,621  DEBUG  |   Added/All kmers count = 1'878'874/1'878'874 (100,0%)
+10-окт.-23  19:16:01,621  DEBUG  |   Added/All kmers frequency sum = 197'866'976/197'866'976 (100,0%)
+10-окт.-23  19:16:01,622  DEBUG  |   k-mers HM size = 1'878'874
+10-окт.-23  19:16:01,723  INFO   |   Loading file filtered_6.kmers.bin...
+10-окт.-23  19:16:01,982  DEBUG  |   23,8 Mb of data processed
+10-окт.-23  19:16:01,982  DEBUG  |   Added/All kmers count = 2'497'749/2'497'749 (100,0%)
+10-окт.-23  19:16:01,983  DEBUG  |   Added/All kmers frequency sum = 248'127'432/248'127'432 (100,0%)
+10-окт.-23  19:16:01,983  DEBUG  |   k-mers HM size = 2'497'749
+10-окт.-23  19:16:01,998  DEBUG  |   Memory used = 1,84 Gb, time = 11 s 227 ms
+10-окт.-23  19:16:01,998  INFO   |   Searching for components...
+10-окт.-23  19:16:01,999  DEBUG  split-strategy
+10-окт.-23  19:16:18,152  INFO   |   Found 2'759 components
+10-окт.-23  19:16:18,158  INFO   |   Iteration was finished in 16 s 159 ms
+10-окт.-23  19:16:18,171  DEBUG  |   Memory used: without GC = 2,27 Gb, after it = 1,93 Gb
+10-окт.-23  19:16:18,180  DEBUG  |   Memory used after cleaning = 1,93 Gb, final time = 16 s 181 ms
+10-окт.-23  19:16:18,183  DEBUG  |   ans.size = 2759
+10-окт.-23  19:16:18,197  INFO   |   Total 2'759 components were found
+10-окт.-23  19:16:18,467  INFO   |   Components saved to extract2/components.bin
+10-окт.-23  19:16:18,467  DEBUG  |   Components-extractor has finished! Time = 27 s 696 ms

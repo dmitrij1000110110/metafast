@@ -1,0 +1,32 @@
+Log created at 10-окт.-2023 (вт) 18:26:49
+10-окт.-23  18:26:49,477  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  18:26:49,478  DEBUG   MAIN: Program parameters = [-k, 5, -i, workDir/kmers/meta_test_1.kmers.bin, --pivot, workDir/kmers/pivot_1.kmers.bin, --pivot2, workDir/kmers/pivot_2.kmers.bin, -w, extract2]
+10-окт.-23  18:26:49,490  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  18:26:49,490  DEBUG   MAIN: Available processors = 8
+10-окт.-23  18:26:52,624  INFO   MAIN: Running tool component-extractor
+10-окт.-23  18:26:52,644  DEBUG  |   Loading graph from files...
+10-окт.-23  18:26:52,751  INFO   |   Loading file meta_test_1.kmers.bin...
+10-окт.-23  18:26:52,765  DEBUG  |   5,00 Kb of data processed
+10-окт.-23  18:26:52,770  DEBUG  |   Added/All kmers count = 512/512 (100,0%)
+10-окт.-23  18:26:52,770  DEBUG  |   Added/All kmers frequency sum = 164'862/164'862 (100,0%)
+10-окт.-23  18:26:52,771  DEBUG  |   k-mers HM size = 512
+10-окт.-23  18:26:52,777  DEBUG  |   Memory used = 17,1 Mb, time = 133 ms
+10-окт.-23  18:26:52,777  DEBUG  |   Loading graph from files...
+10-окт.-23  18:26:52,828  INFO   |   Loading file pivot_1.kmers.bin...
+10-окт.-23  18:26:52,842  DEBUG  |   2,01 Kb of data processed
+10-окт.-23  18:26:52,842  INFO   |   Loading file --pivot2...
+10-окт.-23  18:26:52,843  ERROR  ERROR: Can't load k-mers file
+--
+10-окт.-23  18:26:52,843  TRACE  
+java.io.FileNotFoundException: --pivot2 (Нет такого файла или каталога)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at io.IOUtils.run(IOUtils.java:606)
+	at io.IOUtils.loadKmers(IOUtils.java:380)
+	at tools.ComponentExtractorMain.runImpl(ComponentExtractorMain.java:70)
+	at ru.ifmo.genetics.utils.tool.Tool.simpleRun(Tool.java:285)
+	at ru.ifmo.genetics.utils.tool.Tool.runAsStep(Tool.java:369)
+	at ru.ifmo.genetics.utils.tool.Tool.run(Tool.java:449)
+	at ru.ifmo.genetics.utils.tool.Tool.mainImpl(Tool.java:619)
+	at tools.ComponentExtractorMain2.main(ComponentExtractorMain2.java:111)

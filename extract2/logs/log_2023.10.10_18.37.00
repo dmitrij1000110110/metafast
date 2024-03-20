@@ -1,0 +1,31 @@
+Log created at 10-окт.-2023 (вт) 18:37:00
+10-окт.-23  18:37:00,783  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  18:37:00,784  DEBUG   MAIN: Program parameters = [-k, 5, -i, workDir/kmers/meta_test_1.kmers.bin, --pivot, workDir/kmers/pivot_1.kmers.bin, workDir/kmers/pivot_2.kmers.bin, -w, extract2]
+10-окт.-23  18:37:00,796  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  18:37:00,797  DEBUG   MAIN: Available processors = 8
+10-окт.-23  18:37:02,715  INFO   MAIN: Running tool component-extractor
+10-окт.-23  18:37:02,736  DEBUG  |   Loading graph from files...
+10-окт.-23  18:37:02,840  INFO   |   Loading file meta_test_1.kmers.bin...
+10-окт.-23  18:37:02,857  DEBUG  |   164 Kb of data processed
+10-окт.-23  18:37:02,862  DEBUG  |   Added/All kmers count = 16'804/16'804 (100,0%)
+10-окт.-23  18:37:02,862  DEBUG  |   Added/All kmers frequency sum = 153'325/153'325 (100,0%)
+10-окт.-23  18:37:02,862  DEBUG  |   k-mers HM size = 16'804
+10-окт.-23  18:37:02,870  DEBUG  |   Memory used = 17,1 Mb, time = 134 ms
+10-окт.-23  18:37:02,870  DEBUG  |   Loading graph from files...
+10-окт.-23  18:37:02,919  INFO   |   Loading file pivot_1.kmers.bin...
+10-окт.-23  18:37:02,929  DEBUG  |   580 bytes of data processed
+10-окт.-23  18:37:02,929  INFO   |   Loading file pivot_2.kmers.bin...
+10-окт.-23  18:37:02,945  DEBUG  |   120 bytes of data processed
+10-окт.-23  18:37:02,945  DEBUG  |   Added/All kmers count = 70/70 (100,0%)
+10-окт.-23  18:37:02,946  DEBUG  |   Added/All kmers frequency sum = 140/140 (100,0%)
+10-окт.-23  18:37:02,946  DEBUG  |   k-mers HM size = 70
+10-окт.-23  18:37:02,950  DEBUG  |   Memory used = 22,1 Mb, time = 214 ms
+10-окт.-23  18:37:02,950  INFO   |   Searching for components...
+10-окт.-23  18:37:02,962  INFO   |   Found 70 components
+10-окт.-23  18:37:02,962  INFO   |   Iteration was finished in 11 ms
+10-окт.-23  18:37:02,965  DEBUG  |   Memory used: without GC = 23,4 Mb, after it = 22,2 Mb
+10-окт.-23  18:37:02,968  DEBUG  |   Memory used after cleaning = 22,2 Mb, final time = 17 ms
+10-окт.-23  18:37:02,972  DEBUG  |   ans.size = 70
+10-окт.-23  18:37:02,977  INFO   |   Total 70 components were found
+10-окт.-23  18:37:02,978  INFO   |   Components saved to extract2/components.bin
+10-окт.-23  18:37:02,978  DEBUG  |   Components-extractor has finished! Time = 242 ms

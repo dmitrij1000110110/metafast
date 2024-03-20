@@ -1,0 +1,12 @@
+Log created at 10-окт.-2023 (вт) 18:46:56
+10-окт.-23  18:46:56,328  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  18:46:56,329  DEBUG   MAIN: Program parameters = [-k, 11, -i, test_data/meta_test_1.fa, -f, test_data/meta_test_2.fa, -w, unique]
+10-окт.-23  18:46:56,342  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  18:46:56,342  DEBUG   MAIN: Available processors = 8
+10-окт.-23  18:46:56,343  ERROR  ERROR: Uncaught exception: ru.ifmo.genetics.utils.tool.NotSetArgumentException: Mandatory argument --filter-kmers not set
+--
+ru.ifmo.genetics.utils.tool.NotSetArgumentException: Mandatory argument --filter-kmers not set
+	at ru.ifmo.genetics.utils.tool.Tool.checkArguments(Tool.java:732)
+	at ru.ifmo.genetics.utils.tool.Tool.run(Tool.java:436)
+	at ru.ifmo.genetics.utils.tool.Tool.mainImpl(Tool.java:619)
+	at tools.UniqueKmersFinder.main(UniqueKmersFinder.java:155)

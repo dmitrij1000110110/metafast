@@ -1,0 +1,29 @@
+Log created at 10-окт.-2023 (вт) 18:40:46
+10-окт.-23  18:40:46,327  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  18:40:46,327  DEBUG   MAIN: Program parameters = [-k, 5, -i, workDir/kmers/meta_test_1.kmers.bin, --pivot, workDir/kmers/pivot_1.kmers.bin, -w, extract3]
+10-окт.-23  18:40:46,339  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  18:40:46,339  DEBUG   MAIN: Available processors = 8
+10-окт.-23  18:40:46,339  INFO   MAIN: Running tool component-extractor
+10-окт.-23  18:40:46,358  DEBUG  |   Loading graph from files...
+10-окт.-23  18:40:46,496  INFO   |   Loading file meta_test_1.kmers.bin...
+10-окт.-23  18:40:46,523  DEBUG  |   164 Kb of data processed
+10-окт.-23  18:40:46,532  DEBUG  |   Added/All kmers count = 16'804/16'804 (100,0%)
+10-окт.-23  18:40:46,533  DEBUG  |   Added/All kmers frequency sum = 153'325/153'325 (100,0%)
+10-окт.-23  18:40:46,533  DEBUG  |   k-mers HM size = 16'804
+10-окт.-23  18:40:46,543  DEBUG  |   Memory used = 16,8 Mb, time = 185 ms
+10-окт.-23  18:40:46,543  DEBUG  |   Loading graph from files...
+10-окт.-23  18:40:46,644  INFO   |   Loading file pivot_1.kmers.bin...
+10-окт.-23  18:40:46,658  DEBUG  |   580 bytes of data processed
+10-окт.-23  18:40:46,658  DEBUG  |   Added/All kmers count = 58/58 (100,0%)
+10-окт.-23  18:40:46,659  DEBUG  |   Added/All kmers frequency sum = 116/116 (100,0%)
+10-окт.-23  18:40:46,659  DEBUG  |   k-mers HM size = 58
+10-окт.-23  18:40:46,663  DEBUG  |   Memory used = 21,9 Mb, time = 305 ms
+10-окт.-23  18:40:46,663  INFO   |   Searching for components...
+10-окт.-23  18:40:46,673  INFO   |   Found 58 components
+10-окт.-23  18:40:46,674  INFO   |   Iteration was finished in 10 ms
+10-окт.-23  18:40:46,677  DEBUG  |   Memory used: without GC = 23,1 Mb, after it = 21,9 Mb
+10-окт.-23  18:40:46,681  DEBUG  |   Memory used after cleaning = 21,9 Mb, final time = 17 ms
+10-окт.-23  18:40:46,684  DEBUG  |   ans.size = 58
+10-окт.-23  18:40:46,691  INFO   |   Total 58 components were found
+10-окт.-23  18:40:46,693  INFO   |   Components saved to extract3/components.bin
+10-окт.-23  18:40:46,693  DEBUG  |   Components-extractor has finished! Time = 335 ms

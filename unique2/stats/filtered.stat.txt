@@ -1,0 +1,7 @@
+# k-mer frequency	number of such k-mers
+0	7771
+2	10
+3	2
+5	1
+6	1
+

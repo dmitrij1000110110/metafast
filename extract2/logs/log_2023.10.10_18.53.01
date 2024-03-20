@@ -1,0 +1,123 @@
+Log created at 10-окт.-2023 (вт) 18:53:01
+10-окт.-23  18:53:01,123  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  18:53:01,123  DEBUG   MAIN: Program parameters = [-k, 5, -i, workDir/kmers/meta_test_1.kmers.bin, --pivot, unique/kmers/filtered.kmers.bin, --pivot2, unique2/kmers/filtered.kmers.bin, -w, extract2]
+10-окт.-23  18:53:01,135  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  18:53:01,135  DEBUG   MAIN: Available processors = 8
+10-окт.-23  18:53:02,343  INFO   MAIN: Running tool component-extractor
+10-окт.-23  18:53:02,362  DEBUG  |   Loading graph from files...
+10-окт.-23  18:53:02,453  INFO   |   Loading file meta_test_1.kmers.bin...
+10-окт.-23  18:53:02,469  DEBUG  |   164 Kb of data processed
+10-окт.-23  18:53:02,475  DEBUG  |   Added/All kmers count = 16'804/16'804 (100,0%)
+10-окт.-23  18:53:02,475  DEBUG  |   Added/All kmers frequency sum = 153'325/153'325 (100,0%)
+10-окт.-23  18:53:02,476  DEBUG  |   k-mers HM size = 16'804
+10-окт.-23  18:53:02,482  DEBUG  |   Memory used = 17,1 Mb, time = 121 ms
+10-окт.-23  18:53:02,482  DEBUG  |   Loading graph from files...
+10-окт.-23  18:53:02,543  INFO   |   Loading file filtered.kmers.bin...
+10-окт.-23  18:53:02,557  DEBUG  |   88,2 Kb of data processed
+10-окт.-23  18:53:02,557  DEBUG  |   Added/All kmers count = 9'033/9'033 (100,0%)
+10-окт.-23  18:53:02,558  DEBUG  |   Added/All kmers frequency sum = 80'913/80'913 (100,0%)
+10-окт.-23  18:53:02,558  DEBUG  |   k-mers HM size = 9'033
+10-окт.-23  18:53:02,635  INFO   |   Loading file filtered.kmers.bin...
+10-окт.-23  18:53:02,642  DEBUG  |   140 bytes of data processed
+10-окт.-23  18:53:02,643  DEBUG  |   Added/All kmers count = 14/14 (100,0%)
+10-окт.-23  18:53:02,643  DEBUG  |   Added/All kmers frequency sum = 37/37 (100,0%)
+10-окт.-23  18:53:02,643  DEBUG  |   k-mers HM size = 14
+10-окт.-23  18:53:02,648  DEBUG  |   Memory used = 27,2 Mb, time = 287 ms
+10-окт.-23  18:53:02,648  INFO   |   Searching for components...
+10-окт.-23  18:53:02,648  DEBUG  split-strategy
+10-окт.-23  18:53:02,655  DEBUG  0 0
+10-окт.-23  18:53:02,656  DEBUG  0 0
+10-окт.-23  18:53:02,656  DEBUG  0 0
+10-окт.-23  18:53:02,656  DEBUG  0 0
+10-окт.-23  18:53:02,656  DEBUG  0 0
+10-окт.-23  18:53:02,656  DEBUG  0 0
+10-окт.-23  18:53:02,656  DEBUG  0 0
+10-окт.-23  18:53:02,656  DEBUG  0 0
+10-окт.-23  18:53:02,656  DEBUG  0 0
+10-окт.-23  18:53:02,657  DEBUG  0 0
+10-окт.-23  18:53:02,657  DEBUG  0 0
+10-окт.-23  18:53:02,657  DEBUG  0 0
+10-окт.-23  18:53:02,657  DEBUG  0 0
+10-окт.-23  18:53:02,657  DEBUG  0 0
+10-окт.-23  18:53:02,657  DEBUG  0 0
+10-окт.-23  18:53:02,657  DEBUG  0 0
+10-окт.-23  18:53:02,657  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,658  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,659  DEBUG  0 0
+10-окт.-23  18:53:02,660  DEBUG  0 0
+10-окт.-23  18:53:02,660  DEBUG  0 0
+10-окт.-23  18:53:02,660  DEBUG  0 0
+10-окт.-23  18:53:02,660  DEBUG  0 0
+10-окт.-23  18:53:02,660  DEBUG  0 0
+10-окт.-23  18:53:02,660  DEBUG  0 0
+10-окт.-23  18:53:02,660  DEBUG  0 0
+10-окт.-23  18:53:02,660  DEBUG  0 0
+10-окт.-23  18:53:02,660  DEBUG  0 0
+10-окт.-23  18:53:02,660  DEBUG  0 0
+10-окт.-23  18:53:02,661  DEBUG  0 0
+10-окт.-23  18:53:02,661  DEBUG  0 0
+10-окт.-23  18:53:02,661  DEBUG  0 0
+10-окт.-23  18:53:02,661  DEBUG  0 0
+10-окт.-23  18:53:02,661  DEBUG  0 0
+10-окт.-23  18:53:02,661  DEBUG  0 0
+10-окт.-23  18:53:02,661  DEBUG  0 0
+10-окт.-23  18:53:02,661  DEBUG  0 0
+10-окт.-23  18:53:02,661  DEBUG  0 0
+10-окт.-23  18:53:02,662  DEBUG  0 0
+10-окт.-23  18:53:02,662  DEBUG  0 0
+10-окт.-23  18:53:02,662  DEBUG  0 0
+10-окт.-23  18:53:02,662  DEBUG  0 0
+10-окт.-23  18:53:02,662  DEBUG  0 0
+10-окт.-23  18:53:02,662  DEBUG  0 0
+10-окт.-23  18:53:02,662  DEBUG  0 0
+10-окт.-23  18:53:02,662  DEBUG  0 0
+10-окт.-23  18:53:02,662  DEBUG  0 0
+10-окт.-23  18:53:02,662  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,663  DEBUG  0 0
+10-окт.-23  18:53:02,664  DEBUG  0 0
+10-окт.-23  18:53:02,664  DEBUG  0 0
+10-окт.-23  18:53:02,664  DEBUG  0 0
+10-окт.-23  18:53:02,664  DEBUG  0 0
+10-окт.-23  18:53:02,664  DEBUG  0 0
+10-окт.-23  18:53:02,671  INFO   |   Found 9'013 components
+10-окт.-23  18:53:02,671  INFO   |   Iteration was finished in 23 ms
+10-окт.-23  18:53:02,676  DEBUG  |   Memory used: without GC = 32,5 Mb, after it = 29,1 Mb
+10-окт.-23  18:53:02,679  DEBUG  |   Memory used after cleaning = 29,1 Mb, final time = 31 ms
+10-окт.-23  18:53:02,681  DEBUG  |   ans.size = 9013
+10-окт.-23  18:53:02,705  INFO   |   Total 9'013 components were found
+10-окт.-23  18:53:02,712  INFO   |   Components saved to extract2/components.bin
+10-окт.-23  18:53:02,712  DEBUG  |   Components-extractor has finished! Time = 351 ms

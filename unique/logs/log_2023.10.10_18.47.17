@@ -1,0 +1,13 @@
+Log created at 10-окт.-2023 (вт) 18:47:17
+10-окт.-23  18:47:17,677  DEBUG   MAIN: Program version = 1.4.0 (revision 86a4f8d, 25-Sep-2023)
+10-окт.-23  18:47:17,678  DEBUG   MAIN: Program parameters = [-k, 11, -i, test_data/meta_test_1.fa, --filter-kmers, test_data/meta_test_2.fa, -w, unique]
+10-окт.-23  18:47:17,694  DEBUG   MAIN: Available memory = 2,83 Gb, used = 11,6 Mb
+10-окт.-23  18:47:17,694  DEBUG   MAIN: Available processors = 8
+10-окт.-23  18:47:17,695  INFO   MAIN: Running tool unique-kmers
+10-окт.-23  18:47:17,896  INFO   |   Loading file meta_test_1.fa...
+10-окт.-23  18:47:17,903  ERROR  ERROR: Uncaught exception: java.lang.RuntimeException: BAD division by work range
+--
+java.lang.RuntimeException: BAD division by work range
+	at io.KmersLoadWorker.process(KmersLoadWorker.java:18)
+	at io.BytesWorker.run(BytesWorker.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:833)

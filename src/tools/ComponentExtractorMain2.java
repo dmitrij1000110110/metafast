@@ -10,6 +10,7 @@ import ru.ifmo.genetics.utils.NumUtils;
 import ru.ifmo.genetics.utils.tool.ExecutionFailedException;
 import ru.ifmo.genetics.utils.tool.Parameter;
 import ru.ifmo.genetics.utils.tool.Tool;
+import ru.ifmo.genetics.utils.tool.inputParameterBuilder.DoubleParameterBuilder;
 import ru.ifmo.genetics.utils.tool.inputParameterBuilder.FileMVParameterBuilder;
 import ru.ifmo.genetics.utils.tool.inputParameterBuilder.FileParameterBuilder;
 import ru.ifmo.genetics.utils.tool.inputParameterBuilder.IntParameterBuilder;
@@ -56,12 +57,23 @@ public class ComponentExtractorMain2 extends Tool {
             .withDefaultValue(workDir.append("components.bin"))
             .create());
 
+    public final Parameter<Integer> minPivots = addParameter(new IntParameterBuilder("min-pivots")
+            .mandatory()
+            .withDescription("minimum number of first component pivots to consider path significant")
+            .create());
+
+    public final Parameter<Double> pivotsQuotient = addParameter(new DoubleParameterBuilder("pivots-quotient")
+            .mandatory()
+            .withDescription("minimum quotient of counts to consider path as first input")
+            .create());
+
     /*public final Parameter<Integer> depth = addParameter(new IntParameterBuilder("depth")
             .optional()
             .withDescription("Depth of traversal from pivot k-mers")
             .withDefaultValue(1)
             .create());
     */
+
 
     private final InMemoryValue<File> componentsStatPr = new InMemoryValue<File>();
 
@@ -81,7 +93,7 @@ public class ComponentExtractorMain2 extends Tool {
         List<ConnectedComponentWithPivots> components;
         try {
             String statFP = workDir + File.separator + "components-stat.txt";
-            components = ComponentsBuilderAroundPivot2.splitStrategy(hm, k.get(), pivot, pivot2, statFP, logger);
+            components = ComponentsBuilderAroundPivot2.splitStrategy(hm, k.get(), pivot, pivot2, statFP, logger, minPivots.get(), pivotsQuotient.get());
 
             componentsStatPr.set(new File(statFP));
         } catch (FileNotFoundException e) {
