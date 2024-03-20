@@ -28,11 +28,11 @@ public class ComponentsBuilderAroundPivot2 {
 
     public static List<ConnectedComponentWithPivots> splitStrategy(BigLong2ShortHashMap hm,
                                                                    int k, BigLong2ShortHashMap pivot, BigLong2ShortHashMap pivot2,
-                                                                   String statFP, Logger logger, int MIN_PIVOTS, double pivotsQuotient) throws FileNotFoundException {
+                                                                   String statFP, Logger logger) throws FileNotFoundException {
 
         logger.debug("split-strategy");
 
-        ComponentsBuilderAroundPivot2 builder = new ComponentsBuilderAroundPivot2(k, statFP, logger, MIN_PIVOTS, pivotsQuotient);
+        ComponentsBuilderAroundPivot2 builder = new ComponentsBuilderAroundPivot2(k, statFP, logger);
         builder.run(hm, pivot, pivot2);
         return builder.ans;
     }
@@ -42,18 +42,12 @@ public class ComponentsBuilderAroundPivot2 {
     final String statFP;
     final private Logger logger;
 
-    final int MIN_PIVOTS;
 
-    final double pivotsQuotient;
-
-
-    public ComponentsBuilderAroundPivot2(int k, String statFP, Logger logger, int MIN_PIVOTS, double pivotsQuotient) {
+    public ComponentsBuilderAroundPivot2(int k, String statFP, Logger logger) {
         this.ans = new ArrayList<ConnectedComponentWithPivots>();
         this.k = k;
         this.statFP = statFP;
         this.logger = logger;
-        this.MIN_PIVOTS = MIN_PIVOTS;
-        this.pivotsQuotient = pivotsQuotient;
     }
 
     private void run(BigLong2ShortHashMap hm, BigLong2ShortHashMap pivot, BigLong2ShortHashMap pivot2) throws FileNotFoundException {
@@ -355,10 +349,12 @@ public class ComponentsBuilderAroundPivot2 {
         return comp;
     }
 
+    private static final int MIN_PIVOTS = 100;
+
 
     private boolean goodPath(int pivotCnt, int pivot2Cnt) {
         logger.debug(pivotCnt + " " + pivot2Cnt);
-        return (double) pivotCnt * pivotsQuotient > (double) pivot2Cnt && pivotCnt >= MIN_PIVOTS;
+        return pivotCnt > pivot2Cnt && pivotCnt >= MIN_PIVOTS;
     }
 
     private boolean dfs(long startKmer, long parentKmer, Long2ShortHashMapInterface hm,
