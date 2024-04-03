@@ -53,7 +53,7 @@ public class ConnectedComponentWithPivots implements Comparable<ConnectedCompone
 
     public void add(long kmer, short w, int cnt, int cnt2) {
         if (cnt2 > 0) {
-            System.out.println(cnt + " " + cnt2);
+            //System.out.println(cnt + " " + cnt2);
         }
         kmers.add(kmer);
         size++;
