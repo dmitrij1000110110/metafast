@@ -167,7 +167,7 @@ public class ComponentsBuilderAroundPivot2 {
                 else {
                     for (long neighbour : rightNeighbours) {
                         List<Long> kmersOnPath = new ArrayList<Long>();
-                        boolean goodPath = dfs(neighbour, startKmer, hm, pivot, pivot2, k, kmersOnPath);
+                        boolean goodPath = dfs(neighbour, startKmer, hm, pivot, pivot2, k, kmersOnPath, comp);
                         if (goodPath) {
                             value = hm.get(neighbour);
                             hm.put(neighbour, (short) -value);
@@ -229,7 +229,7 @@ public class ComponentsBuilderAroundPivot2 {
                 else {
                     for (long neighbour : leftNeighbours) {
                         List<Long> kmersOnPath = new ArrayList<Long>();
-                        boolean goodPath = dfs(neighbour, startKmer, hm, pivot, pivot2, k, kmersOnPath);
+                        boolean goodPath = dfs(neighbour, startKmer, hm, pivot, pivot2, k, kmersOnPath, comp);
                         if (goodPath) {
                             value = hm.get(neighbour);
                             hm.put(neighbour, (short) -value);
@@ -320,7 +320,7 @@ public class ComponentsBuilderAroundPivot2 {
             else {
                 for (long neighbour : neighbours) {
                     List<Long> kmersOnPath = new ArrayList<Long>();
-                    boolean goodPath = dfs(neighbour, kmer, hm, pivot, pivot2, k, kmersOnPath);
+                    boolean goodPath = dfs(neighbour, kmer, hm, pivot, pivot2, k, kmersOnPath, comp);
                     if (goodPath) {
                         value = hm.get(neighbour);
                         hm.put(neighbour, (short) -value);
@@ -360,7 +360,7 @@ public class ComponentsBuilderAroundPivot2 {
     }
 
     private boolean dfs(long startKmer, long parentKmer, Long2ShortHashMapInterface hm,
-                        BigLong2ShortHashMap pivot, BigLong2ShortHashMap pivot2, int k, List<Long> kmersOnPath) {
+                        BigLong2ShortHashMap pivot, BigLong2ShortHashMap pivot2, int k, List<Long> kmersOnPath, ConnectedComponentWithPivots comp) {
         boolean foundPivot = false;
         int pivotCnt = 0;
         int pivot2Cnt = 0;
@@ -418,6 +418,10 @@ public class ComponentsBuilderAroundPivot2 {
                 if (pivot2.get(neighbour) > 0) {
                     pivot2Cnt++;
                 }
+
+                //modified
+                comp.add(neighbour, (short) -value, max(0, min(1, pivot.get(neighbour))), max(0, min(1, pivot2.get(neighbour))));
+
                 prev = kmer;
                 kmer = neighbour;
             }
