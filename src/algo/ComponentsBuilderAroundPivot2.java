@@ -432,6 +432,8 @@ public class ComponentsBuilderAroundPivot2 {
 
         }
 
+        System.out.println("cnts: " + pivotCnt + " " + pivot2Cnt);
+
         return goodPath(pivotCnt, pivot2Cnt);
     }
 
