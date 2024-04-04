@@ -421,6 +421,7 @@ public class ComponentsBuilderAroundPivot {
 
         }
 
+        System.out.println("pivots: " + n_pivot);
         return n_pivot;
     }
 
