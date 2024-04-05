@@ -47,6 +47,7 @@ public class ComponentsBuilderAroundPivot2 {
 
 
     public ComponentsBuilderAroundPivot2(int k, String statFP, Logger logger, int minPivots, double pivotsQuotient) {
+        System.out.println("ComponentsBuilderAroundPivot2");
         this.ans = new ArrayList<ConnectedComponentWithPivots>();
         this.k = k;
         this.statFP = statFP;
@@ -56,6 +57,7 @@ public class ComponentsBuilderAroundPivot2 {
     }
 
     private void run(BigLong2ShortHashMap hm, BigLong2ShortHashMap pivot, BigLong2ShortHashMap pivot2) throws FileNotFoundException {
+        System.out.println("ComponentsBuilderAroundPivot2-run");
         Timer t = new Timer();
 
         // current component is formed of k-mers with frequency >= 1
@@ -101,6 +103,7 @@ public class ComponentsBuilderAroundPivot2 {
      */
     private List<ConnectedComponentWithPivots> findAllComponents(Long2ShortHashMapInterface hm,
                                                                  int k, BigLong2ShortHashMap pivot, BigLong2ShortHashMap pivot2) {
+        System.out.println("ComponentsBuilderAroundPivot2-findAllComponents");
         List<ConnectedComponentWithPivots> ans = new ArrayList<ConnectedComponentWithPivots>();
         LongArrayFIFOQueue queue = new LongArrayFIFOQueue((int) min(1 << 16, hm.size() / 2));
         LongArrayFIFOQueue parent = new LongArrayFIFOQueue((int) min(1 << 16, hm.size() / 2));
@@ -125,8 +128,9 @@ public class ComponentsBuilderAroundPivot2 {
     private ConnectedComponentWithPivots bfs(Long2ShortHashMapInterface hm, long startKmer,
                                              LongArrayFIFOQueue queue,
                                              LongArrayFIFOQueue parent, int k, BigLong2ShortHashMap pivot, BigLong2ShortHashMap pivot2) {
+        System.out.println("ComponentsBuilderAroundPivot2-bfs");
         ConnectedComponentWithPivots comp = new ConnectedComponentWithPivots();
-
+        
         queue.clear();
         parent.clear();
 
@@ -361,6 +365,7 @@ public class ComponentsBuilderAroundPivot2 {
 
     private boolean dfs(long startKmer, long parentKmer, Long2ShortHashMapInterface hm,
                         BigLong2ShortHashMap pivot, BigLong2ShortHashMap pivot2, int k, List<Long> kmersOnPath, ConnectedComponentWithPivots comp) {
+        System.out.println("ComponentsBuilderAroundPivot2-dfs");
         boolean foundPivot = false;
         int pivotCnt = 0;
         int pivot2Cnt = 0;
