@@ -135,6 +135,7 @@ public class ComponentsBuilderAroundPivot {
                     n_neighbours++;
                 }
             }
+            System.out.println("n_neighbours_a: " + n_neighbours);
             if (n_neighbours == 0) {
                 // do nothing
             } else {
@@ -201,6 +202,7 @@ public class ComponentsBuilderAroundPivot {
                     n_neighbours++;
                 }
             }
+            System.out.println("n_neighbours_b: " + n_neighbours);
             if (n_neighbours == 0) {
                 // do nothing
             } else {
@@ -301,6 +303,7 @@ public class ComponentsBuilderAroundPivot {
                 // do nothing
             }
             // if single path =>  extend
+            System.out.println("n_neighbours_a: " + n_neighbours);
             if (n_neighbours == 1) {
                 long neighbour = neighbours.get(0);
                 value = hm.get(neighbour);
