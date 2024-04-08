@@ -87,7 +87,7 @@ public class ComponentExtractorMain2 extends Tool {
         debug("Loading graph from files...");
 
         for (File pivotFile: pivotFiles.get()) {
-            System.out.println(pivotFile.name);
+            System.out.println(pivotFile.getName());
         }
 
         
