@@ -85,7 +85,14 @@ public class ComponentExtractorMain2 extends Tool {
         BigLong2ShortHashMap hm = IOUtils.loadKmers(inputFiles.get(), 0, availableProcessors.get(), logger);
         debug("Memory used = " + Misc.usedMemoryAsString() + ", time = " + t);
         debug("Loading graph from files...");
+
+        for (File pivotFile: pivotFiles.get()) {
+            System.out.println(pivotFile.name);
+        }
+
+        
         BigLong2ShortHashMap pivot = IOUtils.loadKmers(pivotFiles.get(), 0, availableProcessors.get(), logger);
+        
         BigLong2ShortHashMap pivot2 = IOUtils.loadKmers(pivotFiles2.get(), 0, availableProcessors.get(), logger);
         debug("Memory used = " + Misc.usedMemoryAsString() + ", time = " + t);
 
