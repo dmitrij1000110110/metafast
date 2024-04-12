@@ -128,7 +128,7 @@ public class ComponentsBuilderAroundPivot2 {
     private ConnectedComponentWithPivots bfs(Long2ShortHashMapInterface hm, long startKmer,
                                              LongArrayFIFOQueue queue,
                                              LongArrayFIFOQueue parent, int k, BigLong2ShortHashMap pivot, BigLong2ShortHashMap pivot2) {
-        System.out.println("ComponentsBuilderAroundPivot2-bfs");
+        //System.out.println("ComponentsBuilderAroundPivot2-bfs");
         ConnectedComponentWithPivots comp = new ConnectedComponentWithPivots();
         
         queue.clear();
@@ -152,7 +152,7 @@ public class ComponentsBuilderAroundPivot2 {
                     n_neighbours++;
                 }
             }
-            System.out.println("n_neighbours_a: " + n_neighbours);
+            //System.out.println("n_neighbours_a: " + n_neighbours);
             if (n_neighbours == 0) {
                 // do nothing
             } else {
@@ -215,7 +215,7 @@ public class ComponentsBuilderAroundPivot2 {
                     n_neighbours++;
                 }
             }
-            System.out.println("n_neighbours_b: " + n_neighbours);
+            //System.out.println("n_neighbours_b: " + n_neighbours);
             if (n_neighbours == 0) {
                 // do nothing
             } else {
@@ -311,7 +311,7 @@ public class ComponentsBuilderAroundPivot2 {
                 // do nothing
             }
             // if single path =>  extend
-            System.out.println("n_neighbours_c: " + n_neighbours);
+            //System.out.println("n_neighbours_c: " + n_neighbours);
             if (n_neighbours == 1) {
                 long neighbour = neighbours.get(0);
                 value = hm.get(neighbour);
@@ -368,7 +368,7 @@ public class ComponentsBuilderAroundPivot2 {
 
     private boolean dfs(long startKmer, long parentKmer, Long2ShortHashMapInterface hm,
                         BigLong2ShortHashMap pivot, BigLong2ShortHashMap pivot2, int k, List<Long> kmersOnPath, ConnectedComponentWithPivots comp) {
-        System.out.println("ComponentsBuilderAroundPivot2-dfs");
+        //System.out.println("ComponentsBuilderAroundPivot2-dfs");
         boolean foundPivot = false;
         int pivotCnt = 0;
         int pivot2Cnt = 0;
